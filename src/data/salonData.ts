@@ -1,0 +1,250 @@
+import { Service, Barber, GalleryItem, Testimonial } from '../types/booking';
+
+export const HERO_IMAGE = '/src/assets/images/hero_luxury_barbershop_1790432202108.jpg';
+export const ABOUT_IMAGE = '/src/assets/images/about_master_barber_1790432220497.jpg';
+export const PACKAGE_IMAGE = '/src/assets/images/package_gentleman_experience_1790432233038.jpg';
+export const FADE_DETAIL_IMAGE = '/src/assets/images/haircut_fade_detail_1790432246644.jpg';
+
+export const SERVICES: Service[] = [
+  {
+    id: 'classic-haircut',
+    name: 'Classic Haircut',
+    category: 'haircut',
+    price: 499,
+    duration: 45,
+    description: 'Precision scissor and clipper cut tailored to your head shape, finished with neck taper, hot towel refresher, and premium matte styling.',
+    image: FADE_DETAIL_IMAGE,
+    features: ['Consultation & Profile Analysis', 'Precision Scissor & Clipper Cut', 'Hot Lather Neck Shave', 'Matte Styling Clay'],
+  },
+  {
+    id: 'premium-haircut',
+    name: 'Premium Haircut & Styling',
+    category: 'haircut',
+    price: 799,
+    duration: 60,
+    popular: true,
+    description: 'Comprehensive styling consultation, precision fade or textured scissor cut, conditioning wash, cooling scalp tonic, and bespoke finish.',
+    image: ABOUT_IMAGE,
+    features: ['Deep Cleansing Scalp Wash', 'Signature Precision Haircut', 'Razor Line Detailing', 'Organic Styling Finish'],
+  },
+  {
+    id: 'beard-sculpting',
+    name: 'Beard Sculpting',
+    category: 'beard',
+    price: 399,
+    duration: 30,
+    description: 'Meticulous beard shaping, length gradation, crisp straight-razor cheek and neck lines with eucalyptus hot steam and conditioning oil.',
+    image: PACKAGE_IMAGE,
+    features: ['Beard Symmetry Mapping', 'Straight Razor Edging', 'Eucalyptus Hot Towel', 'Cedarwood Conditioning Oil'],
+  },
+  {
+    id: 'haircut-beard-combo',
+    name: 'Haircut + Beard',
+    category: 'combo',
+    price: 999,
+    duration: 75,
+    popular: true,
+    description: 'The definitive gentleman overhaul: signature haircut of choice paired seamlessly with custom beard sculpting and straight-razor detailing.',
+    image: HERO_IMAGE,
+    features: ['Complete Hair Cut & Taper', 'Beard Trim & Razor Sharp Lines', 'Dual Hot Towels', 'Styling & Scented Balm'],
+  },
+  {
+    id: 'royal-grooming-package',
+    name: 'Royal Grooming Package',
+    category: 'package',
+    price: 1499,
+    duration: 90,
+    description: 'An indulgent ritual including haircut, royal straight-razor shave, activated charcoal facial scrub, and invigorating neck massage.',
+    image: PACKAGE_IMAGE,
+    features: ['Signature Haircut', 'Traditional Hot Foam Shave', 'Detox Charcoal Facial Mask', 'Shoulder & Neck Relief'],
+  },
+  {
+    id: 'head-massage-spa',
+    name: 'Head Massage & Spa',
+    category: 'spa',
+    price: 699,
+    duration: 45,
+    description: 'Revitalizing acupressure head massage using warm botanical essential oils, steam therapy, and deep scalp detoxification.',
+    image: ABOUT_IMAGE,
+    features: ['Warm Herbal Oil Infusion', 'Deep Scalp Acupressure', 'Warm Steam Therapy', 'Stress Relief Finishing Massage'],
+  },
+];
+
+export const GENTLEMANS_EXPERIENCE_PACKAGE: Service = {
+  id: 'gentlemans-experience',
+  name: "The Gentleman's Experience",
+  category: 'package',
+  price: 1999,
+  duration: 105,
+  description: 'Our pinnacle grooming ceremony combining our most coveted services into an uninterrupted 105-minute masterclass of relaxation and precision.',
+  image: PACKAGE_IMAGE,
+  popular: true,
+  features: [
+    'Premium Haircut & Bespoke Consultation',
+    'Full Beard Sculpting & Razor Precision',
+    'Double Steamed Hot Towel Treatment',
+    'Botanical Conditioning Hair Wash',
+    'Acupressure Scalp & Head Massage',
+    'Signature Artisanal Styling & Cologne Finish',
+  ],
+};
+
+export const BARBERS: Barber[] = [
+  {
+    id: 'arjun-sharma',
+    name: 'Arjun Sharma',
+    position: 'Master Barber & Founder',
+    experience: '8 Years Experience',
+    specialty: 'Classic Cuts & Precision Fades',
+    bio: 'Trained in Mayfair, London with mastery over scissor-over-comb architecture and razor-sharp skin fades tailored for modern executives.',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+    instagram: '@arjun.cuts',
+    rating: 4.98,
+    reviewsCount: 420,
+  },
+  {
+    id: 'marcus-vance',
+    name: 'Marcus Vance',
+    position: 'Senior Grooming Stylist',
+    experience: '6 Years Experience',
+    specialty: 'Beard Sculpting & Razor Finishes',
+    bio: 'An artisan of facial geometry and traditional straight-razor shaves, known for effortless textured quiffs and sharp gentleman profiles.',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    instagram: '@marcus.vance.cut',
+    rating: 4.95,
+    reviewsCount: 310,
+  },
+  {
+    id: 'vikram-singhania',
+    name: 'Vikram Singhania',
+    position: 'Executive Barber & Stylist',
+    experience: '9 Years Experience',
+    specialty: 'Modern Texture & Scissor Work',
+    bio: 'Celebrated for editorial menswear styling, mid-length layering, and corrective scissor sculpting that grows out flawlessly.',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    instagram: '@vikram_cuts_studio',
+    rating: 4.97,
+    reviewsCount: 512,
+  },
+  {
+    id: 'david-rossi',
+    name: 'David Rossi',
+    position: 'Traditional Barber Artisan',
+    experience: '7 Years Experience',
+    specialty: 'Royal Hot Towel & Classic Pompadours',
+    bio: 'Bringing Italian bespoke barbering heritage with old-school straight razor lathers, hot herbal towels, and timeless tapered gentleman contours.',
+    avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80',
+    instagram: '@davidrossi_barber',
+    rating: 4.96,
+    reviewsCount: 290,
+  },
+];
+
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: 'g-1',
+    title: 'Textured Crop & Low Taper Fade',
+    category: 'Fades',
+    imageUrl: FADE_DETAIL_IMAGE,
+    barberName: 'Arjun Sharma',
+  },
+  {
+    id: 'g-2',
+    title: 'Executive Pompadour & Razor Line',
+    category: 'Haircuts',
+    imageUrl: ABOUT_IMAGE,
+    barberName: 'Vikram Singhania',
+  },
+  {
+    id: 'g-3',
+    title: 'Full Sculpted Beard & Lineup',
+    category: 'Beard',
+    imageUrl: PACKAGE_IMAGE,
+    barberName: 'Marcus Vance',
+  },
+  {
+    id: 'g-4',
+    title: 'The Signature Gentleman Salon Lounge',
+    category: 'Salon',
+    imageUrl: HERO_IMAGE,
+    barberName: 'Salon Experience',
+  },
+  {
+    id: 'g-5',
+    title: 'Traditional Italian Hot Lather Shave',
+    category: 'Grooming',
+    imageUrl: PACKAGE_IMAGE,
+    barberName: 'David Rossi',
+  },
+  {
+    id: 'g-6',
+    title: 'Mid Drop Fade with Textured Top',
+    category: 'Styling',
+    imageUrl: FADE_DETAIL_IMAGE,
+    barberName: 'Arjun Sharma',
+  },
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 't-1',
+    name: 'Kabir Malhotra',
+    role: 'Managing Partner, Sovereign Capital',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80',
+    rating: 5,
+    date: '2 weeks ago',
+    comment: 'The Gentlemen’s Cut is leagues ahead of standard salons. Arjun mapped my hair growth patterns and delivered the sharpest fade I have ever had. The hot towel and dark espresso finish make it an absolute sanctuary.',
+    serviceUsed: 'Haircut + Beard',
+  },
+  {
+    id: 't-2',
+    name: 'Devraj Sen',
+    role: 'Creative Director & Architect',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80',
+    rating: 5,
+    date: '1 month ago',
+    comment: 'Booked "The Gentleman’s Experience" before my architectural exhibition. Meticulous attention to detail, genuine straight-razor skill, and zero rush. It feels like an exclusive private members club.',
+    serviceUsed: "The Gentleman's Experience",
+  },
+  {
+    id: 't-3',
+    name: 'Rohan Mehra',
+    role: 'Founder & Tech Executive',
+    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80',
+    rating: 5,
+    date: '3 weeks ago',
+    comment: 'Finally found a barbershop where punctuality and craftsmanship are treated with equal respect. My reservation was ready the minute I walked in. Marcus transformed my beard lines perfectly.',
+    serviceUsed: 'Beard Sculpting',
+  },
+  {
+    id: 't-4',
+    name: 'Sameer Singhal',
+    role: 'Automotive Journalist',
+    avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=150&q=80',
+    rating: 5,
+    date: 'Recent',
+    comment: 'Clean vintage aesthetics, soothing ambient playlist, and incredible scissor-work by Vikram. If you care about your personal presentation, this is the only spot worth booking in the city.',
+    serviceUsed: 'Premium Haircut & Styling',
+  },
+];
+
+export const SALON_STATS = [
+  { value: '8+', label: 'Years Experience', note: 'Founded in 2018' },
+  { value: '15K+', label: 'Happy Clients', note: 'Distinguished patrons' },
+  { value: '12', label: 'Professional Barbers', note: 'Master craftsmen' },
+  { value: '4.9/5', label: 'Client Rating', note: 'Based on 2,400+ reviews' },
+];
+
+export const SALON_INFO = {
+  name: "THE GENTLEMEN'S CUT",
+  tagline: 'Classic Style. Modern Confidence.',
+  est: 'EST. 2018',
+  address: 'Heritage Square, Suite 402, High Street Galleria, Financial District',
+  phone: '+91 98200 45890',
+  email: 'reservations@thegentlemenscut.com',
+  whatsapp: '+919820045890',
+  hours: [
+    { days: 'Monday – Saturday', time: '9:00 AM – 9:00 PM' },
+    { days: 'Sunday', time: '10:00 AM – 6:00 PM' },
+  ],
+};

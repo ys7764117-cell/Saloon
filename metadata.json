@@ -1,0 +1,7 @@
+{
+  "name": "The Gentlemen's Cut — Luxury Barbershop",
+  "description": "Premium men's grooming salon combining traditional barbering techniques with modern styling, luxury service and personalized grooming.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
